@@ -27,6 +27,10 @@ This will produce a file named like `searchlinkfix-n.n.n.xpi`. Creating a build 
 
 This will create an unsigned Chrome package named like `searchlinkfix-n.n.n.zip`.
 
+Docker build:
+
+    docker run --rm -it -v $PWD:/srv ubuntu:noble sh -c "apt update && apt upgrade -y && apt install -y gulp && cd /srv && gulp xpi"
+
 How to test
 -----------
 
